@@ -26,18 +26,47 @@ document.addEventListener("DOMContentLoaded", function() {
   })();
 
 
-  (function fillInAnswersAfterPageReload () { 
-    let testareas = document.querySelectorAll('.step__textarea');
+  (function selectEmotion() {  
+    let emotionsContainerEl = document.getElementById('emotions__container');
 
-    testareas.forEach(function(element) {
-      element.value = localStorage.getItem(element.id); 
-    }); 
+    emotionsContainerEl.addEventListener('click', function(e) {
+
+      document.querySelectorAll('.emotions__item').forEach(function(e){
+        e.classList.remove('emotions__item--selected');
+      });
+      e.target.classList.add('emotions__item--selected');
+      localStorage.setItem("emotion", e.target.innerHTML); 
+    });
+
+  })();
+
+
+  (function fillInAnswersAfterPageReload () { 
+
+    (function fillInTextareas() {
+      let textareas = document.querySelectorAll('.step__textarea');
+
+      textareas.forEach(function(element) {
+        element.value = localStorage.getItem(element.id); 
+      }); 
+    })();
+
+
+    (function restoreSelectedEmotions() {
+      let emotion = localStorage.getItem("emotion");
+
+      document.querySelectorAll('.emotions__item').forEach(function(e){ 
+        if (e && e.innerHTML === emotion) { 
+          e.classList.add('emotions__item--selected');
+        }
+      }); 
+    })();
   })();
 
 
   (function handleTextareaEdit () {
     let containerEl = document.getElementById('container');
-    
+
     containerEl.addEventListener("input", function (e) { 
       localStorage.setItem(e.target.id, e.target.value); 
     });

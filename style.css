@@ -63,6 +63,10 @@ body {
   background: #f0f0f0;
   color: #333;
 } 
+.emotions__item--selected, 
+.emotions__item--selected:hover {
+  background: yellow;
+}
 
 .emotions__item.hidden {
   display: none;
