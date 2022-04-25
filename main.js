@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
   let emotions3 = ['Злорадство', 'Тоска', 'Грусть', 'Печаль', 'Ностальгия','Горечь',  'Шок', 'Презрение', 'Не могу определить эмоцию']; 
 
  
-  (function printEmotionsBlock() { 
+  (function printEmotionsBlock() {  
     let emotionsContainerEl = document.getElementById('emotions__container');
-    function printEmotionsList (emotionsList) {
 
+    function printEmotionsList (emotionsList) { 
       let emotionsListEl = document.createElement('ul');
       emotionsListEl.classList.add('emotions__list'); 
       emotionsContainerEl.appendChild(emotionsListEl);
@@ -26,20 +26,18 @@ document.addEventListener("DOMContentLoaded", function() {
   })();
 
 
-
   (function fillInAnswersAfterPageReload () { 
     let testareas = document.querySelectorAll('.step__textarea');
+
     testareas.forEach(function(element) {
       element.value = localStorage.getItem(element.id); 
-    });
-
+    }); 
   })();
-
-
 
 
   (function handleTextareaEdit () {
     let containerEl = document.getElementById('container');
+    
     containerEl.addEventListener("input", function (e) { 
       localStorage.setItem(e.target.id, e.target.value); 
     });

@@ -16,9 +16,7 @@ body {
   width: 620px;
   max-width: calc(100% - 40px);
   min-height: 200px;
-}
- .step {
-}
+} 
 
 .step__textarea {
   width: 100%;
@@ -57,16 +55,14 @@ body {
   margin: 6px;
   border-radius: 12px;
   color: #666;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-   
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); 
 }
 
 .emotions__item:hover {
   cursor: pointer;
   background: #f0f0f0;
   color: #333;
-}
-
+} 
 
 .emotions__item.hidden {
   display: none;
