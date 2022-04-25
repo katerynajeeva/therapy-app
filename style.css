@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
 } 
- .emotions {
+.container {
   padding: 20px;
   border-radius: 20px;
   background: #b9e8b9;
@@ -17,7 +17,22 @@ body {
   max-width: calc(100% - 40px);
   min-height: 200px;
 }
+ .step {
+}
 
+.step__textarea {
+  width: 100%;
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%; 
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  font-family: arial;
+  color: #666;
+  box-sizing: border-box;
+  margin: 10px 0 20px;
+}
 .emotions__intro {
     margin: 5px;
     margin-bottom: 20px;

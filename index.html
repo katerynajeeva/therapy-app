@@ -8,9 +8,60 @@
   <link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
 <body>
-  <div class="emotions" id="emotions">  
-    <div class="emotions__intro">Какую эмоцию вы сейчас испытываете?</div>
-    <div id="emotions__container" class="emotions__container"></div>
+
+  <div class="container" id="container">  
+
+    <div class="step">
+      <div>Итак, начнем! Напиши (постарайся уместить проблему в одном предложении) в чем твоя проблема сейчас. Что тебя беспокоит?</div>
+      <textarea class="step__textarea" id="answer1"></textarea>
+    </div>
+
+    <div class="step">
+      <div>Хорошо, идем дальше! Что в этой проблеме самое неприятное? Запиши хотя бы один пункт, и если придет в голову что-то еще, запиши списком, пока он не станет исчерпывающим</div>
+      <textarea class="step__textarea" id="answer2"></textarea>
+    </div>
+    
+    <div class="step">
+      <div>Записал? Ты уже сделал огромный шаг к решению своей проблемы, но это только начало! Сейчас оцени по шкале от 0 до 10 все пункты которые ты перечислил, где 0 - вообще не беспокоит, а 10 - максимально беспокоит</div>
+      <textarea class="step__textarea" id="answer3"></textarea>
+    </div>
+    
+    <div class="step">
+      <div>Теперь выбери из списка один пункт, который тебя беспокоит больше всего. Это то с чем мы сегодня будем работать!</div>
+      <textarea class="step__textarea" id="answer4"></textarea>
+    </div>
+    
+    <div class="step">
+      <div>Когда ты чувствуешь эту проблему? вспомни конкретную ситуацию, когда проблема проявлялась.</div>
+      <textarea class="step__textarea" id="answer5"></textarea>
+    </div>
+    
+    <div class="step">
+      <div>Запиши: 1. где ты, 2. когда это происходило 3.с кем ты, и что именно происходит с тобой. Что тригерит тебя.</div>
+      <textarea class="step__textarea" id="answer6"></textarea>
+    </div>
+
+    <div class="step" id="emotions">  
+      <div class="emotions__intro">Теперь мы составим "Эмоциональный шаблон". Предлставь, что все то что ты описал, происходит прямо сейчас. Перечитай ответ на предыдущий вопрос. Перенесись в эту ситуацию. Прочувствуй ее. И запиши ответы на три вопроса: 1. Какую эмоцию чувствуешь? Кликни</div>
+      <div id="emotions__container" class="emotions__container"></div>
+    </div> 
+    
+    <div class="step">
+      <div> 2. Что ты чувствуешь в теле? 
+      <textarea class="step__textarea" id="answer7"></textarea>
+    </div>
+
+    <div class="step">
+      3. Какие мысли в этот момент в голове?</div>
+      <textarea class="step__textarea" id="answer8"></textarea>
+    </div>
+
+    <div>
+      <div>Отлично. Мы начинаем работать над ситуацией.  Как должна измениться ситуация, чтобы этой эмоции не было? (Чтобы сразу все стало хорошо)</div>
+      <textarea class="step__textarea" id="answer9"></textarea>
+    </div>
+
   </div>
+
 </body>
 </html>
