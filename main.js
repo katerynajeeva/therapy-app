@@ -1,3 +1,6 @@
+import {positiveEmotions, basicNeedsJoy, basicNeedsCalm, 
+  basicNeedsSatisfaction, basicNeedsInterest} from './data.js';
+
 document.addEventListener("DOMContentLoaded", function() {
 
   let emotions1 = ['Страх (беспокойство, тревога, паника)', 'Отчаяние', 'Уныние', 'Сожаление','Досада', 'Обида', 'Разочарование']; 
@@ -39,6 +42,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
   })();
+
+
+  // (function printPositiveEmotionsBlock() {  
+  //   let emotionsContainerEl = document.getElementById('positiveEmotions');
+
+  //   function printEmotionsList (emotionsList) { 
+  //     let emotionsListEl = document.createElement('ul');
+  //     emotionsListEl.classList.add('emotions__list'); 
+  //     emotionsContainerEl.appendChild(emotionsListEl);
+
+  //     emotionsList.forEach(function(emotionName) {
+  //       let li = document.createElement('li');
+  //       li.classList.add('emotions__item');
+  //       li.innerHTML = emotionName;
+  //       emotionsListEl.appendChild(li);
+  //     }); 
+  //   }
+  //   printEmotionsList(positiveEmotions); 
+  // })();
+
+
 
 
   (function fillInAnswersAfterPageReload () { 
