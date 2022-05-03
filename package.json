@@ -1,0 +1,22 @@
+{
+  "name": "2022.04.21_emotherapy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katerynajeeva/therapy-app.git"
+  },
+  "author": "katerynajeeva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katerynajeeva/therapy-app/issues"
+  },
+  "homepage": "https://github.com/katerynajeeva/therapy-app#readme",
+  "devDependencies": {
+    "light-server": "^2.9.1"
+  }
+}

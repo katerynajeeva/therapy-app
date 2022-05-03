@@ -8,6 +8,7 @@ body {
   display: flex; 
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 } 
 .container {
   padding: 20px;
@@ -16,7 +17,11 @@ body {
   width: 620px;
   max-width: calc(100% - 40px);
   min-height: 200px;
+  margin-bottom: 20px;
 } 
+.container--yellow {
+  background: #fada5e;
+}
 
 .step__textarea {
   width: 100%;
@@ -41,12 +46,12 @@ body {
 }
 
 .emotions__list {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
   padding-bottom: 20px;
-  font-size: 14px;
-  width: 33.33%;
+  font-size: 14px; 
 }
 
 .emotions__item {
