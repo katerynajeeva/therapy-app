@@ -1,10 +1,14 @@
-# This is my pet project Therapy-App
+# "THERAPY APP"  
+
+This is a pet project.
+
+## What is it made for
 
 It allows you to solve your psycological problems without a psycologist, using "Emotheraphy" method on your own. Emotherapy was created by Tamara Zigler. Its also knows as "Resourseful-Emotional Therapy" ("Ресурсно-Эмоциональная Трансформация", "РЭТ").
 
 ## How to use
 
-You can use this project online, it's published here: https://katerynajeeva.github.io/therapy-app/.
+You can use this project online, it's published here: https://katerynajeeva.github.io/therapy-app/.  (!!! WORK IN PROGRESS !!!)
 
 All the data is stored in LocalStorage of your browser, so no data gonna be sent to server
 
