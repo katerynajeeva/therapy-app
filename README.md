@@ -1,8 +1,8 @@
-# "THERAPY APP"  
+# THERAPY APP
 
 This is a pet project.
 
-## What is it made for
+## What is it made for 
 
 It allows you to solve your psycological problems without a psycologist, using "Emotheraphy" method on your own. Emotherapy was created by Tamara Zigler. Its also knows as "Resourseful-Emotional Therapy" ("Ресурсно-Эмоциональная Трансформация", "РЭТ").
 
